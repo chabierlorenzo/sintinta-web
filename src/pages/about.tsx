@@ -25,12 +25,12 @@ export const pageQuery = graphql`
 export default class AboutPage extends React.Component<IndexPageProps> {
   public render() {
     const props = {
-      pageTitle: "¿Quiénes somos?",
+      pageTitle: "About us?",
     };
 
     return (
       <Layout {...props}>
-        <p>Somos pocos y cobardes.</p>
+        <p>We are few and cowards.</p>
       </Layout>
     );
   }

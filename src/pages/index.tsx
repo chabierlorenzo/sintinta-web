@@ -37,9 +37,7 @@ export default class IndexPage extends React.Component<IndexPageProps> {
 
     return (
       <Layout {...props}>
-        <p>
-          This site is named <strong>{siteName}</strong>
-        </p>
+        <p>Geek App for a (self description) reader.</p>
       </Layout>
     );
   }

@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 type LayoutProps = { children?: React.ReactNode } & { pageTitle?: string };
 
 const MainLayout: React.FC = ({ children, pageTitle }: LayoutProps) => (
-  <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+  <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-2">
     <title>{pageTitle || "sintinta.com"}</title>
 
     <nav className="flex items-center justify-between flex-wrap bg-teal-500 pl-8 pt-5">
@@ -26,7 +26,7 @@ const MainLayout: React.FC = ({ children, pageTitle }: LayoutProps) => (
         <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
           <h1> {pageTitle || "sintinta.com"}</h1>
         </div>
-        <p className="block pt-5 mt-1 text-lg leading-tight font-medium text-gray-800 hover:underline">
+        <p className="block pt-5 mt-1 text-lg leading-tight font-medium text-gray-700 hover:underline">
           {children}
         </p>
         <p className="mt-2 pt-5 pb-4 text-gray-500">

@@ -1,7 +1,6 @@
 import { graphql, PageProps } from "gatsby";
 import * as React from "react";
 import Layout from "../components/layout";
-import Source from "../components/source";
 
 // Please note that you can use https://github.com/dotansimha/graphql-code-generator
 // to generate all types from graphQL schema
@@ -26,19 +25,21 @@ export const pageQuery = graphql`
 `;
 
 export default class IndexPage extends React.Component<IndexPageProps> {
-  readonly hello = `Hello`;
-
-  description = "description";
+  readonly pageTitle = "Be book, my friend...";
 
   public render() {
     const { siteName } = this.props.data.site.siteMetadata;
+
+    const props = {
+      pageTitle: this.pageTitle,
+      siteName: siteName,
+    };
+
     return (
-      <Layout>
-        <h1>{this.hello} TypeScript world!</h1>
+      <Layout {...props}>
         <p>
           This site is named <strong>{siteName}</strong>
         </p>
-        <Source children={this.description} />
       </Layout>
     );
   }

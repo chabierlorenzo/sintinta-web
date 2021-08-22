@@ -1,8 +1,11 @@
-import * as React from "react"
+import * as React from "react";
 
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../utils/typography";
+import { Link } from "gatsby";
 
-const MainLayout: React.FC = ({ children }) => (
+type LayoutProps = { children?: React.ReactNode } & { pageTitle?: string };
+
+const MainLayout: React.FC = ({ children, pageTitle }: LayoutProps  ) => (
   <div
     style={{
       margin: `0 auto`,
@@ -13,8 +16,23 @@ const MainLayout: React.FC = ({ children }) => (
       paddingRight: rhythm(3 / 4),
     }}
   >
-    {children}
+    <title>{pageTitle || 'sintinta.com'}</title>
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1> {pageTitle || 'sintinta.com'}</h1>
+      {children}
+    </main>
   </div>
-)
+);
 
-export default MainLayout
+
+export default MainLayout;

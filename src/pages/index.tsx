@@ -25,7 +25,7 @@ export const pageQuery = graphql`
 `;
 
 export default class IndexPage extends React.Component<IndexPageProps> {
-  readonly pageTitle = "Be book, my friend...";
+  readonly pageTitle = "Be paper, my friend..";
 
   public render() {
     const { siteName } = this.props.data.site.siteMetadata;
@@ -37,7 +37,7 @@ export default class IndexPage extends React.Component<IndexPageProps> {
 
     return (
       <Layout {...props}>
-        <p>Geek App for a (self description) reader.</p>
+        <p className="space-x-1">Geek App for a (self description) reader.</p>
       </Layout>
     );
   }

@@ -13,7 +13,7 @@ interface IndexPageProps extends PageProps {
 }
 
 export const pageQuery = graphql`
-  query IndexQuery2 {
+  query IndexQueryWhy {
     site {
       siteMetadata {
         siteName
@@ -22,15 +22,17 @@ export const pageQuery = graphql`
   }
 `;
 
-export default class AboutPage extends React.Component<IndexPageProps> {
+export default class DisclaimerPage extends React.Component<IndexPageProps> {
   public render() {
     const props = {
-      pageTitle: "About us?",
+      pageTitle: "Just for read.",
     };
 
     return (
       <Layout {...props}>
-        <p className="text-gray-600">No graphic designer was harmed in te making of this website.</p>
+        <p className="text-gray-600 mb-4">
+          Developed in spare time, with no business interests and no pressure.
+        </p>
       </Layout>
     );
   }

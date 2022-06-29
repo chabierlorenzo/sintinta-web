@@ -30,7 +30,14 @@ export default class AboutPage extends React.Component<IndexPageProps> {
 
     return (
       <Layout {...props}>
-        <p>We are few and cowards.</p>
+        <div className="text-4xl">Tecnologías</div>
+        <div>NestJS</div>
+        <div>Angular</div>
+        <div>Typescript</div>
+        <div>RxJS</div>
+        <div>GraphQL</div>
+        <div>Gatsby</div>
+        <div>Tailwindcsss</div>
       </Layout>
     );
   }

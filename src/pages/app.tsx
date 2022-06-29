@@ -1,11 +1,11 @@
+import { PageProps } from "gatsby";
 import * as React from "react";
 import { Link } from "gatsby";
-import backgroundImage from "./images/background-book.jpg";
 
 type LayoutProps = { children?: React.ReactNode } & { pageTitle?: string };
 
-const MainLayout: React.FC = ({ children, pageTitle }: LayoutProps) => (
-  <div>
+const SintintaPage: React.FC = ({ children, pageTitle }: LayoutProps) => (
+  <div className="h-screen bg-blue-900">
     <nav className="bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -35,7 +35,7 @@ const MainLayout: React.FC = ({ children, pageTitle }: LayoutProps) => (
                 </a>
 
                 <a
-                  href="/app"
+                  href="/sintinta"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   App
@@ -88,15 +88,15 @@ const MainLayout: React.FC = ({ children, pageTitle }: LayoutProps) => (
                 </div>
 
                 {/* <!--
-                Dropdown menu, show/hide based on menu state.
+                  Dropdown menu, show/hide based on menu state.
 
-                Entering: "transition ease-out duration-100"
-                  From: "transform opacity-0 scale-95"
-                  To: "transform opacity-100 scale-100"
-                Leaving: "transition ease-in duration-75"
-                  From: "transform opacity-100 scale-100"
-                  To: "transform opacity-0 scale-95"
-              --> */}
+                  Entering: "transition ease-out duration-100"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                  Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95"
+                --> */}
                 <div
                   className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
                   role="menu"
@@ -148,10 +148,10 @@ const MainLayout: React.FC = ({ children, pageTitle }: LayoutProps) => (
             >
               <span className="sr-only">Open main menu</span>
               {/* <!--
-              Heroicon name: outline/menu
+                Heroicon name: outline/menu
 
-              Menu open: "hidden", Menu closed: "block"
-            --> */}
+                Menu open: "hidden", Menu closed: "block"
+              --> */}
               <svg
                 className="block h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -168,10 +168,10 @@ const MainLayout: React.FC = ({ children, pageTitle }: LayoutProps) => (
                 />
               </svg>
               {/* <!--
-              Heroicon name: outline/x
+                Heroicon name: outline/x
 
-              Menu open: "block", Menu closed: "hidden"
-            --> */}
+                Menu open: "block", Menu closed: "hidden"
+              --> */}
               <svg
                 className="hidden h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -212,7 +212,7 @@ const MainLayout: React.FC = ({ children, pageTitle }: LayoutProps) => (
           </a>
 
           <a
-            href="/app"
+            href="/sintinta"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             App
@@ -284,17 +284,17 @@ const MainLayout: React.FC = ({ children, pageTitle }: LayoutProps) => (
       </div>
     </nav>
 
-    {/* <header className="bg-white shadow">
+    <header className="bg-white shadow">
       <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
       </div>
-    </header> */}
+    </header>
     <main className="flex">
-      <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 h-full flex-1 divide-y-2 space-y-10">
+      <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 h-full flex-1">
         {children}
       </div>
     </main>
   </div>
 );
 
-export default MainLayout;
+export default SintintaPage;

@@ -35,7 +35,7 @@ const MainLayout: React.FC = ({
       >
         {" "}
       </Helmet>
-      <title>Hola Caracola</title>
+
       <Header menuLinks={menuLinks} siteTitle={pageTitle} />
 
       {/* <header className="bg-white shadow">

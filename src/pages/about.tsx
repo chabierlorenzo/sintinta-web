@@ -46,10 +46,7 @@ export default class AboutPage extends React.Component<IndexPageProps> {
     return (
       <Layout {...props}>
         <div className="bg-white md-round ml-8 mt-3">
-          <div className="text-4xl leading-8 font-ex  bo ld tracking-tight text-purple-500 dark:text-white sm:text-4xl my-5">
-            Geek App for a (
-            <span className="text-gray-500">self description</span>) reader.
-          </div>
+
           <div className="space-x-1 mt-2 sm:text-2xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"

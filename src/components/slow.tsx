@@ -4,10 +4,12 @@ const SlowCmp: React.FC = ({ children }) => (
   <div className="py-2 bg-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="lg:text-center">
-        <h2 className="text-base text-indigo-400 font-semibold tracking-wide uppercase">
-          Be paper, my friend...
-        </h2>
-        <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        <div className="text-4xl leading-8 font-ex  bo ld tracking-tight text-purple-500 dark:text-white sm:text-4xl my-5">
+          Geek App for a (
+          <span className="text-gray-500">self description</span>) reader.
+        </div>
+
+        <p className="mt-2 text-xl leading-8 tracking-tight text-gray-900 sm:text-3xl">
           A place to enjoy paper books
         </p>
         <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
@@ -16,7 +18,11 @@ const SlowCmp: React.FC = ({ children }) => (
           better than a spoon.” Umberto Eco.
         </p>
       </div>
-
+      <div className="lg:text-center mt-8 mb-4">
+        <h2 className="text-base text-indigo-400 font-semibold tracking-wide uppercase">
+          Be paper, my friend...
+        </h2>
+      </div>
       <div className="mt-10">
         <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
           <div className="relative">

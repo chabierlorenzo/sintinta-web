@@ -35,16 +35,24 @@ const Header = ({ siteTitle, menuLinks }) => {
                   Home
                 </Link>
                 {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-                <a
+
+                <Link
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  to="/about"
+                >
+                  About
+                </Link>
+                {/* <a
                   href="/about"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   aria-current="page"
                 >
                   About
-                </a>
+                </a> */}
 
                 <a
-                  href="/app"
+                  href="https://app.sintinta.com"
+
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   App

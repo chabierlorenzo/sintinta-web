@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import { useState } from "react";
-import Header from "./header";
+import Header from "./header.tsx";
 
 type LayoutProps = { children?: React.ReactNode } & { pageTitle?: string } & {
   menuLinks?: any;

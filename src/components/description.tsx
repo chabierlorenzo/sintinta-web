@@ -7,14 +7,14 @@ const DescriptionCmp: React.FC = ({ children }) => (
         <div className="w-full lg:w-1/2 px-8">
           <div className="mb-12 lg:mb-0 pb-12 lg:pb-0 border-b lg:border-b-0">
             <h2 className="mb-4 text-3xl lg:text-4xl font-bold font-heading dark:text-white">
-              Sed ac magna sit amet risus tristique interdum, at vel velit in
-              hac habitasse platea dictumst.
+              Slow reading
             </h2>
             <p className="mb-8 leading-loose text-gray-500 dark:text-gray-300">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed
-              porttitor est nibh at nulla. Praesent placerat enim ut ex
-              tincidunt vehicula. Fusce sit amet dui tellus.
+              Slow reading is the intentional reduction in the speed of reading,
+              carried out to increase comprehension or pleasure. The concept
+              appears to have originated in the study of philosophy and
+              literature as a technique to more fully comprehend and appreciate
+              a complex text
             </p>
             <div className="w-full md:w-1/3">
               <button
@@ -36,11 +36,12 @@ const DescriptionCmp: React.FC = ({ children }) => (
               </div>
               <div className="px-4">
                 <h3 className="my-4 text-xl font-semibold dark:text-white">
-                  Responsive Elements
+                  Adjust the speed to the reading
                 </h3>
                 <p className="text-gray-500 dark:text-gray-300 leading-loose">
-                  All elements are responsive and provide the best display in
-                  all screen size. It&#x27;s magic !
+                  It is not mandatory to read slowly, because the aim is to
+                  immerse yourself in the world that is condensed in the pages
+                  you hold in your hands.
                 </p>
               </div>
             </li>
@@ -52,11 +53,14 @@ const DescriptionCmp: React.FC = ({ children }) => (
               </div>
               <div className="px-4">
                 <h3 className="my-4 text-xl font-semibold dark:text-white">
-                  Flexible Team
+                  Take notes whenever you can.
                 </h3>
                 <p className="text-gray-500 dark:text-gray-300 leading-loose">
-                  Flexibility is the key. All team is available 24/24 and
-                  joinable every day on our hotline.
+                  While you are reading and when you have finished reading.
+                  Ideas that come up, concepts that you don't know or that you
+                  can relate to others. Summarizing what you have read can be
+                  useful both to settle down and to pick up where you left off
+                  the next time you open the book.
                 </p>
               </div>
             </li>
@@ -68,11 +72,12 @@ const DescriptionCmp: React.FC = ({ children }) => (
               </div>
               <div className="px-4">
                 <h3 className="my-4 text-xl font-semibold dark:text-white">
-                  Ecologic Software
+                  Build your knowledge
                 </h3>
                 <p className="text-gray-500 dark:text-gray-300 leading-loose">
-                  Our Software are ecologic and responsable. Green is not just a
-                  color, it&#x27;s a way of life.
+                  Share your emotions and knowledge with other readers to enrich
+                  all the content and knowledge you have been creating. Find the
+                  relationships. Build your reading.
                 </p>
               </div>
             </li>

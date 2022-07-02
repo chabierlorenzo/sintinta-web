@@ -2,7 +2,21 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "sintinta",
-    siteName: "sintinta.com",
+    siteName: "Sintinta",
+    menuLinks: [
+      {
+        name: "home",
+        link: "/",
+      },
+      {
+        name: "About",
+        link: "/about",
+      },
+      {
+        name: "App",
+        link: "/app",
+      },
+    ],
   },
   plugins: [
     "gatsby-plugin-postcss",

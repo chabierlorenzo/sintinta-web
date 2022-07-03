@@ -14,8 +14,11 @@ const Header = ({ siteTitle, menuLinks }) => {
     }
   };
 
+  const linkStyles =
+    "text-white hover:bg-blue-700 hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium";
+
   return (
-    <nav className="bg-gray-800">
+    <nav className="bg-blue-500 fixed w-full z-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -30,41 +33,32 @@ const Header = ({ siteTitle, menuLinks }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
-                <rect width="100%" height="100%" fill="#1f2937"></rect>
+                <rect width="100%" height="100%" fill="#3b82f6"></rect>
                 <path
                   d="M12 11.55C9.64 9.35 6.48 8 3 8v11c3.48 0 6.64 1.35 9 3.55 2.36-2.19 5.52-3.55 9-3.55V8c-3.48 0-6.64 1.35-9 3.55zM12 8c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3z"
-                  fill="#3b82f6"
+                  fill="#ffffff"
                 ></path>
               </svg>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  to="/"
-                >
+                <Link className={linkStyles} to="/">
                   Sintinta
                 </Link>
-                {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
+                {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-gray-300" --> */}
 
-                <Link
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  to="/about"
-                >
+                <Link className={linkStyles} to="/about">
                   Why?
                 </Link>
                 {/* <a
                   href="/about"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-300 hover:bg-blue-700 hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
                   aria-current="page"
                 >
                   About
                 </a> */}
 
-                <a
-                  href="https://app.sintinta.com"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
+                <a href="https://app.sintinta.com" className={linkStyles}>
                   App
                 </a>
               </div>
@@ -127,7 +121,7 @@ const Header = ({ siteTitle, menuLinks }) => {
         --> */}
                 {profile > 0 && (
                   <div
-                    className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                    className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-transparent ring-1 ring-black ring-opacity-5 focus:outline-none"
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="user-menu-button"
@@ -227,26 +221,15 @@ const Header = ({ siteTitle, menuLinks }) => {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
 
-          <Link
-            className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-            aria-current="page"
-            to="/"
-          >
+          <Link className={linkStyles} aria-current="page" to="/">
             Home
           </Link>
 
-          <Link
-            className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-            aria-current="page"
-            to="/about"
-          >
+          <Link className={linkStyles} aria-current="page" to="/about">
             About
           </Link>
 
-          <a
-            href="https://app.sintinta.com"
-            className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
+          <a href="https://app.sintinta.com" className={linkStyles}>
             App
           </a>
         </div>

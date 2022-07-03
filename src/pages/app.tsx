@@ -23,7 +23,7 @@ const SintintaPage: React.FC = ({ children, pageTitle }: LayoutProps) => (
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   to="/"
                 >
-                  Homeww
+                  Sintinta
                 </Link>
                 {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                 <a
@@ -99,7 +99,7 @@ const SintintaPage: React.FC = ({ children, pageTitle }: LayoutProps) => (
                     To: "transform opacity-0 scale-95"
                 --> */}
                 <div
-                  className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                  className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-transparent ring-1 ring-black ring-opacity-5 focus:outline-none"
                   role="menu"
                   aria-orientation="vertical"
                   aria-labelledby="user-menu-button"
@@ -285,7 +285,7 @@ const SintintaPage: React.FC = ({ children, pageTitle }: LayoutProps) => (
       </div>
     </nav>
 
-    <header className="bg-white shadow">
+    <header className="bg-transparent shadow">
       <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
       </div>

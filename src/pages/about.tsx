@@ -45,15 +45,16 @@ export default class AboutPage extends React.Component<IndexPageProps> {
 
     return (
       <Layout {...props}>
-        <div className="bg-white md-round ml-8 mt-3">
+        <div className="bg-white md-round ml-8 mt-28">
           <div className="m-5 leading-tight">
-            <div className="text-blue-500 dark:text-white sm:text-4xl my-6">
-              Why spend time and effort on projects that don't make you a
+            <div className="text-4xl leading-8 font-ex bold tracking-tight  dark:text-white sm:text-4xl my-5">
+              Why spend time and effort on projects that{" "}
+              <span className="text-gray-400">won't</span> make you a
               millionaire?
             </div>
-            <div className="text-gray-600 my-6 sm:text-2xl">
-              There are several, absurd and regrettable causes, but the main one
-              is love:
+            <div className="mt-8 text-xl text-sky-600 leading-8 tracking-tight mb-12 text-gray-900 sm:text-3xl">
+              There are several causes, absurd and regrettable, but the main
+              irrational one is love:
             </div>
             <ul className="list-none list-inside space-y-4 sm:text-xl">
               <li>

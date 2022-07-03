@@ -15,10 +15,10 @@ const Header = ({ siteTitle, menuLinks }) => {
   };
 
   const linkStyles =
-    "text-white hover:bg-blue-700 hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium";
+    "text-white hover:bg-sky-200 hover:text-sky-700 px-3 py-2 rounded-md text-sm font-medium";
 
   return (
-    <nav className="bg-blue-500 fixed w-full z-20">
+    <nav className="bg-sky-700 fixed w-full z-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -33,7 +33,7 @@ const Header = ({ siteTitle, menuLinks }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
-                <rect width="100%" height="100%" fill="#3b82f6"></rect>
+                <rect width="100%" height="100%" fill="#0369a1"></rect>
                 <path
                   d="M12 11.55C9.64 9.35 6.48 8 3 8v11c3.48 0 6.64 1.35 9 3.55 2.36-2.19 5.52-3.55 9-3.55V8c-3.48 0-6.64 1.35-9 3.55zM12 8c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3z"
                   fill="#ffffff"

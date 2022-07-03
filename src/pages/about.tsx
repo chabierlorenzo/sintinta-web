@@ -47,20 +47,20 @@ export default class AboutPage extends React.Component<IndexPageProps> {
       <Layout {...props}>
         <div className="bg-white md-round ml-8 mt-28">
           <div className="m-5 leading-tight">
-            <div className="text-4xl leading-8 font-ex bold tracking-tight  dark:text-white sm:text-4xl my-5">
+            <div className="text-4xl leading-8 font-ex bold tracking-tight text-black dark:text-blue sm:text-4xl my-5">
               Why spend time and effort on projects that{" "}
               <span className="text-gray-400">won't</span> make you a
               millionaire?
             </div>
-            <div className="mt-8 text-xl text-sky-600 leading-8 tracking-tight mb-12 text-gray-900 sm:text-3xl">
+            <div className="mt-8 text-xl text-sky-600 leading-8 tracking-tight mb-8 text-gray-900 sm:text-3xl">
               There are several causes, absurd and regrettable, but the main
-              irrational one is love:
+              irrational one is... love:
             </div>
-            <ul className="list-none list-inside space-y-4 sm:text-xl">
+            <ul className="list-none text-gray-500 list-inside space-y-4 sm:text-xl">
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 inline-block text-purple-500"
+                  className="h-6 w-6 inline-block text-sky-300"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -78,7 +78,7 @@ export default class AboutPage extends React.Component<IndexPageProps> {
               <li className="space-y-2.5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 inline-block text-purple-500"
+                  className="h-6 w-6 inline-block text-sky-300"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -97,7 +97,7 @@ export default class AboutPage extends React.Component<IndexPageProps> {
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 inline-block text-purple-500"
+                  className="h-6 w-6 inline-block text-sky-300"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -135,7 +135,7 @@ export default class AboutPage extends React.Component<IndexPageProps> {
         </div>
 
         <div className=" ml-8 mt-3">
-          <div className="text-4xl leading-8 font-ex  bo ld tracking-tight text-blue-500 dark:text-white sm:text-4xl my-5">
+          <div className="text-3xl leading-8 font-ex  bo ld tracking-tight text-sky-500 sm:text-3xl mt-5">
             Technologies
           </div>
 
@@ -143,7 +143,7 @@ export default class AboutPage extends React.Component<IndexPageProps> {
         </div>
 
         <div className=" ml-8 mt-3">
-          <div className="text-4xl leading-8 font-ex  bo ld tracking-tight text-blue-500 dark:text-white sm:text-4xl my-5">
+          <div className="text-3xl leading-8 font-ex  bo ld tracking-tight text-sky-500 sm:text-3xl mt-5">
             Other
           </div>
 

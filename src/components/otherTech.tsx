@@ -6,7 +6,8 @@ const OtherTechCmp: React.FC = ({ children }) => {
     "ml-16 mb-8 text-lg leading-6 font-medium text-gray-900";
 
   const paragraphIconStyle =
-    "absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white";
+    "absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-600 text-white";
+
   return (
     <div className="py-2 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -48,11 +48,11 @@ export default class AboutPage extends React.Component<IndexPageProps> {
         <div className="bg-white md-round ml-8 mt-3">
           <div className="m-5 leading-tight">
             <div className="text-blue-500 dark:text-white sm:text-4xl my-6">
-              Why are there such absurd projects that don't make you a
+              Why spend time and effort on projects that don't make you a
               millionaire?
             </div>
             <div className="text-gray-600 my-6 sm:text-2xl">
-              There are several absurd and regrettable causes, but the main one
+              There are several, absurd and regrettable causes, but the main one
               is love:
             </div>
             <ul className="list-none list-inside space-y-4 sm:text-xl">
@@ -108,8 +108,8 @@ export default class AboutPage extends React.Component<IndexPageProps> {
                     d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
                   />
                 </svg>{" "}
-                I love ignoring warnings from other human beings that I am
-                wasting my time.
+                I love ignoring warnings from other human beings that I am a
+                perfect dunce.
               </li>
 
               {/* <li>

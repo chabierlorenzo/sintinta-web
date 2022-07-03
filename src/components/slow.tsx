@@ -37,10 +37,16 @@ const SlowCmp: React.FC = ({ children }) => {
                 </p>
               </dt>
               <dd className="mt-2 ml-16 text-base text-gray-500">
-                Reading is a pleasure that can be enjoyed without rushing. Read
-                at a speed that allows you to delve into the text and get the
-                most out of it. Slow reading is not a defect, but a habit that
-                you can enjoy whenever you want.
+                <p className="my-2">
+                  Reading is a pleasure that can be enjoyed without counting
+                  pages per hour or calculating the performance of our reading
+                  system.
+                </p>
+                <p>
+                  Read at a speed that allows you to be immersed in the text and
+                  get the most out of it. Slow reading is not a defect, but a
+                  habit that you can enjoy whenever you want or need to.
+                </p>
               </dd>
             </div>
 

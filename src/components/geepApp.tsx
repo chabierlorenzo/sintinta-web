@@ -11,8 +11,8 @@ const GeepAppCmp: React.FC = ({ children }) => {
       <div className="m-5 leading-tight">
         <div className="">
           <div className={title}>
-            GeekApp* for a{" "}
-            <span className="text-gray-400">{"{selfDescription}"}</span> reader.
+            Geek reading app for a{" "}
+            <span className="text-gray-400">{"(self description)"}</span> reader.*
           </div>
           <div className={subTitle}>A place to enjoy paper books.</div>
 
@@ -23,8 +23,8 @@ const GeepAppCmp: React.FC = ({ children }) => {
             <span className="text-sky-600">Umberto Eco</span>.
           </p>
 
-          <div className="text-gray-400 my-6 sm:text-base">
-            * Development** in progress, stealing free time for a personal
+          <div className="text-gray-400 mt-6 sm:text-base">
+            * Development in progress**, stealing free time for a personal
             project without a clear objective except to avoid becoming a
             millionaire.{" "}
             <span className="text-red-400 italic">Just for fun!</span>

@@ -38,15 +38,18 @@ const SlowCmp: React.FC = ({ children }) => {
               </dt>
               <dd className="mt-2 ml-16 text-base text-gray-500">
                 <p className="my-2">
+                  Read at a speed that allows you to be immersed in the text and
+                  get the most out of it.
+                </p>
+                <p className="my-2">
+                  Slow reading is not a defect, but a habit that you can enjoy
+                  whenever you want or need to.
+                </p>
+                {/* <p className="my-2">
                   Reading is a pleasure that can be enjoyed without counting
                   pages per hour or calculating the performance of our reading
                   system.
-                </p>
-                <p>
-                  Read at a speed that allows you to be immersed in the text and
-                  get the most out of it. Slow reading is not a defect, but a
-                  habit that you can enjoy whenever you want or need to.
-                </p>
+                </p> */}
               </dd>
             </div>
 

@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import Features from "../components/features";
 import DescriptionCmp from "../components/description";
 import Slow from "../components/slow";
+import GeepApp from "../components/geepApp";
 
 // Please note that you can use https://github.com/dotansimha/graphql-code-generator
 // to generate all types from graphQL schema
@@ -55,6 +56,8 @@ export default class IndexPage extends React.Component<IndexPageProps> {
 
     return (
       <Layout {...props}>
+        <GeepApp></GeepApp>
+
         <Slow></Slow>
 
         <DescriptionCmp></DescriptionCmp>

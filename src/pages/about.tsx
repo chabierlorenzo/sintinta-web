@@ -1,7 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import { graphql, PageProps } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 import Tech from "../components/tech";
 import OtherTech from "../components/otherTech";
 
@@ -47,46 +46,16 @@ export default class AboutPage extends React.Component<IndexPageProps> {
     return (
       <Layout {...props}>
         <div className="bg-white md-round ml-8 mt-3">
-          <div className="space-x-1 mt-2 sm:text-2xl">
-            {/* <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 inline-block text-purple-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-              />
-            </svg>{" "} */}
-            Slow development in spare time with no business interests and,
-            <span className="text-gray-500 italic"> almost</span>, no coffee.{" "}
-          </div>
           <div className="m-5 leading-tight">
-            <div className=" my-6 sm:text-2xl">Just for fun* and:</div>
+            <div className="text-blue-500 dark:text-white sm:text-4xl my-6">
+              Why are there such absurd projects that don't make you a
+              millionaire?
+            </div>
+            <div className="text-gray-600 my-6 sm:text-2xl">
+              There are several absurd and regrettable causes, but the main one
+              is love:
+            </div>
             <ul className="list-none list-inside space-y-4 sm:text-xl">
-              <li className="space-y-2.5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 inline-block text-purple-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                  />
-                </svg>{" "}
-                Play with{" "}
-                <span className="text-gray-500 line-through">cursed</span>{" "}
-                technologies.
-              </li>
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -102,8 +71,28 @@ export default class AboutPage extends React.Component<IndexPageProps> {
                     d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                   />
                 </svg>{" "}
-                Improve the reader experience (assuming that exists).
+                I love paper books.
               </li>
+
+              <li className="space-y-2.5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 inline-block text-purple-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  />
+                </svg>{" "}
+                I love playing with technologies as an {"{myAge}"}-year-old
+                child.
+              </li>
+
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -119,9 +108,11 @@ export default class AboutPage extends React.Component<IndexPageProps> {
                     d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
                   />
                 </svg>{" "}
-                Ignoring warnings that I'm wasting my time.
+                I love ignoring warnings from other human beings that I am
+                wasting my time.
               </li>
-              <li>
+
+              {/* <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 inline-block text-purple-500"
@@ -136,13 +127,9 @@ export default class AboutPage extends React.Component<IndexPageProps> {
                     d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>{" "}
-                At last, but not least, ignoring iphone for the time being
-                (sic).
-              </li>
+                Ignoring iphone for the time being (sic).
+              </li> */}
             </ul>
-          </div>
-          <div className="text-gray-400 my-9 sm:text-base">
-            * No Graphic Designers were harmed in the making of this Web
           </div>
         </div>
 

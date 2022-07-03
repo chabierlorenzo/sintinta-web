@@ -23,7 +23,7 @@ const SintintaPage: React.FC = ({ children, pageTitle }: LayoutProps) => (
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   to="/"
                 >
-                  Home
+                  Homeww
                 </Link>
                 {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                 <a
@@ -202,7 +202,7 @@ const SintintaPage: React.FC = ({ children, pageTitle }: LayoutProps) => (
             className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
             aria-current="page"
           >
-            Home
+            Home2
           </a>
 
           <a

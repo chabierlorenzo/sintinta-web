@@ -3,21 +3,6 @@ import * as React from "react";
 const SlowCmp: React.FC = ({ children }) => (
   <div className="py-2 bg-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="lg:text-center">
-        <div className="text-4xl leading-8 font-ex  bo ld tracking-tight text-purple-500 dark:text-white sm:text-4xl my-5">
-          Geek App for a (
-          <span className="text-gray-500">self description</span>) reader.
-        </div>
-
-        <p className="mt-2 text-xl leading-8 tracking-tight text-gray-900 sm:text-3xl">
-          A place to enjoy paper books
-        </p>
-        <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-          “The book is like the spoon, scissors, the hammer, the wheel. Once
-          invented, it cannot be improved. You cannot make a spoon that is
-          better than a spoon.” Umberto Eco.
-        </p>
-      </div>
       <div className="lg:text-center mt-8 mb-4">
         <h2 className="text-base text-indigo-400 font-semibold tracking-wide uppercase">
           Be paper, my friend...
@@ -28,7 +13,7 @@ const SlowCmp: React.FC = ({ children }) => (
           <div className="relative">
             <dt>
               <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                {/* <!-- Heroicon name: outline/globe-alt --> */}
+                {/* <!-- Heroicon name: outline/annotation --> */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -47,7 +32,7 @@ const SlowCmp: React.FC = ({ children }) => (
                 </svg>
               </div>
               <p className="ml-16 text-lg leading-6 font-medium text-gray-900">
-                Slow Reading
+                Slow Reading.
               </p>
             </dt>
             <dd className="mt-2 ml-16 text-base text-gray-500">
@@ -247,8 +232,6 @@ const SlowCmp: React.FC = ({ children }) => (
         </dl>
       </div>
     </div>
-
-
   </div>
 );
 export default SlowCmp;

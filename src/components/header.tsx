@@ -20,11 +20,22 @@ const Header = ({ siteTitle, menuLinks }) => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <img
+              {/* <img
                 className="h-8 w-8"
                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
                 alt="Workflow"
-              />
+              /> */}
+              <svg
+                className="h-9 w-9 text-blue-500"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <rect width="100%" height="100%" fill="#1f2937"></rect>
+                <path
+                  d="M12 11.55C9.64 9.35 6.48 8 3 8v11c3.48 0 6.64 1.35 9 3.55 2.36-2.19 5.52-3.55 9-3.55V8c-3.48 0-6.64 1.35-9 3.55zM12 8c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3z"
+                  fill="#3b82f6"
+                ></path>
+              </svg>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
@@ -32,7 +43,7 @@ const Header = ({ siteTitle, menuLinks }) => {
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   to="/"
                 >
-                  Home
+                  Sintinta
                 </Link>
                 {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
 
@@ -40,7 +51,7 @@ const Header = ({ siteTitle, menuLinks }) => {
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   to="/about"
                 >
-                  About
+                  Why?
                 </Link>
                 {/* <a
                   href="/about"
@@ -52,7 +63,6 @@ const Header = ({ siteTitle, menuLinks }) => {
 
                 <a
                   href="https://app.sintinta.com"
-
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   App
@@ -62,12 +72,12 @@ const Header = ({ siteTitle, menuLinks }) => {
           </div>
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6">
-              <button
+              {/* <button
                 type="button"
                 className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
               >
                 <span className="sr-only">View notifications</span>
-                {/*{/* <!-- Heroicon name: outline/bell --> */}
+
                 <svg
                   className="h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
@@ -83,11 +93,11 @@ const Header = ({ siteTitle, menuLinks }) => {
                     d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
                   />
                 </svg>
-              </button>
+              </button> */}
 
               {/* <!-- Profile dropdown --> */}
               <div className="ml-3 relative">
-                <div>
+                {/* <div>
                   <button
                     onClick={toggleShowProfile}
                     type="button"
@@ -103,7 +113,7 @@ const Header = ({ siteTitle, menuLinks }) => {
                       alt=""
                     />
                   </button>
-                </div>
+                </div> */}
 
                 {/* <!--
           Dropdown menu, show/hide based on menu state.
@@ -160,19 +170,19 @@ const Header = ({ siteTitle, menuLinks }) => {
           </div>
           <div className="-mr-2 flex md:hidden">
             {/* <!-- Mobile menu button --> */}
-            <button
+            {/* <button
               type="button"
               className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
-              <span className="sr-only">Open main menu</span>
-              {/* <!--
+              <span className="sr-only">Open main menu</span> */}
+            {/* <!--
         Heroicon name: outline/menu
 
         Menu open: "hidden", Menu closed: "block"
       --> */}
-              <svg
+            {/* <svg
                 className="block h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -186,13 +196,13 @@ const Header = ({ siteTitle, menuLinks }) => {
                   strokeWidth="2"
                   d="M4 6h16M4 12h16M4 18h16"
                 />
-              </svg>
-              {/* <!--
+              </svg> */}
+            {/* <!--
         Heroicon name: outline/x
 
         Menu open: "block", Menu closed: "hidden"
       --> */}
-              <svg
+            {/* <svg
                 className="hidden h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -207,7 +217,7 @@ const Header = ({ siteTitle, menuLinks }) => {
                   d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
@@ -216,163 +226,90 @@ const Header = ({ siteTitle, menuLinks }) => {
       <div className="md:hidden" id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-          <a
-            href="/"
+
+          <Link
             className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
             aria-current="page"
+            to="/"
           >
             Home
-          </a>
+          </Link>
 
-          <a
-            href="/about"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+          <Link
+            className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+            aria-current="page"
+            to="/about"
           >
             About
-          </a>
+          </Link>
 
           <a
-            href="/app"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            href="https://app.sintinta.com"
+            className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             App
           </a>
         </div>
-        <div className="pt-4 pb-3 border-t border-gray-700">
-          <div className="flex items-center px-5">
-            <div className="flex-shrink-0">
-              <img
-                className="h-10 w-10 rounded-full"
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                alt=""
-              />
-            </div>
-            <div className="ml-3">
-              <div className="text-base font-medium leading-none text-white">
-                Tom Cook
-              </div>
-              <div className="text-sm font-medium leading-none text-gray-400">
-                tom@example.com
-              </div>
-            </div>
-            <button
-              type="button"
-              className="ml-auto bg-gray-800 flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-            >
-              <span className="sr-only">View notifications</span>
-              {/* <!-- Heroicon name: outline/bell --> */}
-              <svg
-                className="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+        {profile > 0 && (
+          <div className="pt-4 pb-3 border-t border-gray-700">
+            <div className="flex items-center px-5">
+              <div className="flex-shrink-0">
+                <img
+                  className="h-10 w-10 rounded-full"
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt=""
                 />
-              </svg>
-            </button>
-          </div>
-          <div className="mt-3 px-2 space-y-1">
-            {menuLinks.map((link) => (
-              <div
-                key={link.name}
-                style={{
-                  listStyleType: `none`,
-                  padding: `1rem`,
-                }}
-              >
-                <Link style={{ color: `white` }} to={link.link}>
-                  {link.name}
-                </Link>
               </div>
-            ))}
+              <div className="ml-3">
+                <div className="text-base font-medium leading-none text-white">
+                  Tom Cook
+                </div>
+                <div className="text-sm font-medium leading-none text-gray-400">
+                  tom@example.com
+                </div>
+              </div>
+              <button
+                type="button"
+                className="ml-auto bg-gray-800 flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              >
+                <span className="sr-only">View notifications</span>
 
-            {/* <a
-            href="#"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
-          >
-            Your Profile
-          </a>
-
-          <a
-            href="#"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
-          >
-            Settings
-          </a>
-
-          <a
-            href="#"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
-          >
-            Sign out
-          </a> */}
+                <svg
+                  className="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div className="mt-3 px-2 space-y-1">
+              {menuLinks.map((link) => (
+                <div
+                  key={link.name}
+                  style={{
+                    listStyleType: `none`,
+                    padding: `1rem`,
+                  }}
+                >
+                  <Link style={{ color: `white` }} to={link.link}>
+                    {link.name}
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </nav>
-
-    // <header
-    //   style={{
-    //     background: "rebeccapurple",
-    //     marginBottom: "1.45rem",
-    //   }}
-    // >
-    //   <div
-    //     style={{
-    //       background: "rebeccapurple",
-    //       marginBottom: "1.45rem",
-    //     }}
-    //   >
-    //     <div
-    //       style={{
-    //         margin: "0 auto",
-    //         maxWidth: 960,
-    //         padding: "1.45rem 1.0875rem",
-    //         display: "flex",
-    //         justifyItems: "space-between",
-    //         alignItems: "center",
-    //       }}
-    //     >
-    //       <h1 style={{ margin: 0, flex: 1 }}>
-    //         <Link
-    //           to="/"
-    //           style={{
-    //             color: "white",
-    //             textDecoration: "none",
-    //           }}
-    //         >
-    //           {siteTitle}
-    //         </Link>
-    //       </h1>
-    //       <div>
-    //         <nav>
-    //           <ul style={{ display: "flex", flex: 1 }}>
-    //             {menuLinks.map(link => (
-    //               <li
-    //                 key={link.name}
-    //                 style={{
-    //                   listStyleType: `none`,
-    //                   padding: `1rem`,
-    //                 }}
-    //               >
-    //                 <Link style={{ color: `white` }} to={link.link}>
-    //                   {link.name}
-    //                 </Link>
-    //               </li>
-    //             ))}
-    //           </ul>
-    //         </nav>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </header>
   );
 };
 Header.propTypes = {
